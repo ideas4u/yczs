@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/yczs/yczs",
+    "pages/feedback/feedback",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

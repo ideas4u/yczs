@@ -1,0 +1,5 @@
+/* pages/yczs/yczs.wxss */
+@import "../lib/weui.wxss";
+.section__ctn{
+    text-align: center;
+}

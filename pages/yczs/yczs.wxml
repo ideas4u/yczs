@@ -1,0 +1,33 @@
+<!--pages/yczs/yczs.wxml-->
+<!--<text>pages/yczs/yczs.wxml</text>-->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">洋葱OMALL</text>
+    <text class="page__desc">抢货助手</text>
+  </view>
+  <view class="page__bd">
+
+
+    <view class="section__ctn">
+      <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="aspectFit" src="{{src}}"></image>
+    </view>
+
+  </view>
+  <view class='page__hd'>
+    <input placeholder='请输入登录账号' bindinput="bindUserName" adjust-positioin="true"></input>
+    <input password='true' placeholder='请输入登录密码' bindinput='bindPassWord' adjust-positioin="true"></input>
+    <button size='mini' bindtap='reqflask' type='primary'>添加购物车</button>
+    <button size='mini' bindtap='reqclean' type='warn'>一键清空购物车</button>
+  </view>
+  <view wx:if="{{postLinkCon}} is'addtocart'" class='page__hd'>
+    <text>{{successRes}}</text>
+  </view>
+  <view wx:elif="{{postLinkCon}} is 'cleancart'" class='page__hd'>
+    <text>本次抢购用时:{{successRes}}秒</text>
+  </view>
+
+  <view wx:else class='page__hd' >
+    <text>请先点击添加购物车后再点一键清空购物车</text>
+  </view>
+</view>
